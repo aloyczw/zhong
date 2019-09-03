@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="utifly.js"></script>
+        <script>
+       /* function fn(n){
+            var zs=true;
+            for(var i=2;i<n;i++){
+                if(n%i===0){
+                    zs=false;
+                }
+                }
+            
+            return zs;
+        }
+      // console.log(fn(9));
+       function fa(a){
+        for(var i=100;i<=a;i++){
+            if(fn(i)){
+                document.write(i+"是质数 ");
+            }
+            
+        }
+       }
+       fa(200);*/
+       /*function  qh(n){
+            if(n<=2){
+                return 1/n;
+            }
+            return 1/n+qh(n-2);
+       }
+       console.log(qh(33))*/
+/*var n=5;
+var a=rabbit(n);
+console.log(a);*/
+function $ (id){return document.getElementById(id);}
+//使用$代替document.getElementById（）是为了减少代码的重复率。
+window.onload = function ()
+{
+otxt= $('txt');
+obut= $('but');
+obox = $('box')
+
+function jie(n){
+//计算阶乘的函数，使用递归的方法
+if(n == 1){
+    return 1;
+}
+return n= n * jie(n - 1);
+//递归的公式为 n! = n * (n - 1)!
+}
+
+oButt.onclick = function(){
+//点击输出阶乘的事件
+otxt= Number(otxt.value);
+obox.innerHTML = jie(ntxt);
+}
+}
+    </script>
+    </head>
+    <body>
+    <input type="text"id="txt">
+    <input type="button"value="计算阶乘"id="btn">
+    <div id="box"></div>
+    </body>
+</html>

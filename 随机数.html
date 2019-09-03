@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src=./utifly.js></script>
+        <style>
+            p{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text">
+        <button id="btn">获取验证码</button>
+        <div>hhhhhh</div>
+        <p>验证码不正确</p>
+            <script>
+            var c=ran()
+           var b=c.join(',')
+           
+            var btn=document.getElementById('btn')
+            var div=document.getElementsByTagName("div")
+            var p=document.getElementsByTagName("p")[0]
+            var input=document.getElementsByTagName("input")
+            div[0].innerText
+            btn.onclick=function(){
+                div[0].innerText=b
+            }
+            var aa=input.value
+            if(aa!==b){
+                p.style.display="block"
+            }
+
+            </script>
+    </body>
+</html>

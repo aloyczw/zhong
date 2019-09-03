@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+//二维数组
+/*function fn(){
+    var arr=[];
+    for(var i=0;i<30;i++){
+        arr[i]=(i+1)*2;
+    }
+    return arr;
+}
+function fa(arr){
+    var arr1=[];
+    for(var n=0;n<=6;n++){
+        arr1[n]=n*10+(arr[0]+arr[1]+arr[2]+arr[3]+arr[4])/5
+    }
+    return arr1;
+}
+var arr=fn();
+console.log(arr);
+var arr1=fa(arr);
+console.log(arr1);*/
+// 二维数组并组成左下三角形
+/*function fn(){
+    var arr=[];
+    for(i=0;i<=4;i++){
+        arr[i]=[i*5+1,i*5+2,i*5+3,i*5+4,i*5+5];
+        //arr[i].slice(0,(-4+i))
+        //arr[i]=[i*5+1,i*5+2,i*5+3,i*5+4,i*5+5];
+    }
+    //return arr;
+    return arr
+}
+fn();
+var arr=fn();
+console.log(arr);
+console.log(arr[0].slice(0,-4);
+console.log(arr[1].slice(0,-3));
+console.log(arr[2].slice(0,-2));
+console.log(arr[3].slice(0,-1));
+console.log(arr[4].slice(0));*/
+//document.write(num+“”); var num = 123; document.write(num);;
+//var a = 10; function test(a){   a -=3; } test(a); console.log(a);
+/*function ran(){
+    var num=Math.floor(Math.random()*10000);
+    console.log(num)
+    var a1=Math.floor(num/1000),a2=Math.floor((num%1000)/100),a3=Math.floor((num%100)/10),a4=num%10;
+    if(num<10){
+        return arr=[a4];
+    }
+    if(num<100){
+        return arr=[a3,a4];
+    }
+    if(num<1000){
+        return arr=[a2,a3,a4];
+    }
+    if(num<10000){
+        return arr=[a1,a2,a3,a4];
+    }
+}
+
+console.log(ran())*/
+window.onload=function(){
+var data=[{"uid":"2688","uname":"*江苏省南菁高级中学 022","sum":274.23},{"uid":"2689","uname":"*江阴国际会展中心管理有限公司 024","sum":0},{"uid":"2686","uname":"江苏申利实业股份有限公司 001","sum":7917.94},{"uid":"2715","uname":"江阴市吉达针纺有限公司 115","sum":41.39},{"uid":"2688","uname":"*江苏省南菁高级中学 022","sum":274.23}]
+//js循环读取json数据
+var table=document.getElementById("table");
+for(var i=0;i<data.length;i++){
+var row=table.insertRow(table.rows.length);
+var c1=row.insertCell(0);
+c1.innerHTML=data[i].uid;
+var c2=row.insertCell(1);
+c2.innerHTML=data[i].uname;
+var c3=row.insertCell(2);
+c3.innerHTML=data[i].sum;
+}
+}
+        </script>
+    <style>window.onload=function(){
+var data=[{"uid":"2688","uname":"*江苏省南菁高级中学 022","sum":274.23},{"uid":"2689","uname":"*江阴国际会展中心管理有限公司 024","sum":0},{"uid":"2686","uname":"江苏申利实业股份有限公司 001","sum":7917.94},{"uid":"2715","uname":"江阴市吉达针纺有限公司 115","sum":41.39},{"uid":"2688","uname":"*江苏省南菁高级中学 022","sum":274.23}]
+//js循环读取json数据
+var table=document.getElementById("table");
+for(var i=0;i<data.length;i++){
+var row=table.insertRow(table.rows.length);
+var c1=row.insertCell(0);
+c1.innerHTML=data[i].uid;
+var c2=row.insertCell(1);
+c2.innerHTML=data[i].uname;
+var c3=row.insertCell(2);
+c3.innerHTML=data[i].sum;
+}
+}
+    #aa{
+        width:0;
+        height:0;
+        border-width:100px;
+        border-style:solid;
+        border-color:green transparent  transparent transparent;
+        margin:200px auto;
+        position:absolute;
+    }
+    #ab{
+         width:0;
+        height:0;
+        border-width:80px;
+        border-style:solid;
+        border-color:orange transparent  transparent transparent;
+       position:relative;
+       top:-100px;
+       left:-80px;
+    }
+    #ac{
+         width:0;
+        height:0;
+        border-width:40px;
+        border-style:solid;
+        border-color:#efeded transparent  transparent transparent;
+       position:relative;
+       top:-80px;
+       left:-40px;
+    }
+    </style>
+    </head>
+    <body>
+    <div id="aa">
+        <div id="ab">
+            <div id="ac">
+                
+            </div>
+      </div>
+    </div>
+    </body>
+</html>

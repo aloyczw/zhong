@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+        function fn(a,b,c){
+            var tmp=0;
+          if(a>b){
+            tmp=a;
+            a=b;
+            b=tmp;
+          }
+          if(a>c){
+            tmp=a;
+            a=c;
+            c=tmp;
+          }
+          if(b>c){
+            tmp=b;
+            b=c;
+            c=tmp;
+          }
+         document.write(a+"<"+b+"<"+c);
+        }
+        fn(11,5,3);
+        function fn(){
+            var tmp;
+            arr=[11,5,4]
+            for(var j=0;j<arr.length;j++){
+            for(var i=0;i<arr.length-1;i++){
+                if(arr[i]>arr[i+1]){
+                    tmp=arr[i];
+                    arr[i]=arr[i+1];
+                    arr[i+1]=tmp;
+                }
+
+                }
+            }
+            document.write(arr);
+        }
+       fn();
+       
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
